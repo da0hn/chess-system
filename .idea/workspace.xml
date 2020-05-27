@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3c458e96-a48b-402d-9aff-a91d66f3057a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/boardgame/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/boardgame/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chess/ChessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessMatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579362851952</updated>
       <workItem from="1579362870711" duration="5538000" />
-      <workItem from="1590587341417" duration="6254000" />
+      <workItem from="1590587341417" duration="9517000" />
     </task>
     <task id="LOCAL-00001" summary="ChessException and ChessPosition">
       <created>1590592141675</created>
@@ -148,9 +151,9 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="459" y="192" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1590595700811" />
-    <state x="618" y="267" width="672" height="678" key="search.everywhere.popup" timestamp="1590592770895">
+    <state x="618" y="267" width="672" height="678" key="search.everywhere.popup" timestamp="1590598616323">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="618" y="267" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1590592770895" />
+    <state x="618" y="267" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1590598616323" />
   </component>
 </project>
