@@ -15,6 +15,7 @@ public class ChessMatch {
     private Board board;
     private int turn;
     private Color currentPlayer;
+    private boolean check;
 
     private List<Piece> piecesOnTheBoard;
     private List<Piece> capturedPieces;
@@ -24,6 +25,7 @@ public class ChessMatch {
         this.piecesOnTheBoard = new ArrayList<>();
         this.capturedPieces = new ArrayList<>();
         this.turn = 1;
+        this.check = false;
         this.currentPlayer = Color.WHITE;
         initialSetup();
     }
@@ -77,6 +79,16 @@ public class ChessMatch {
             this.capturedPieces.add(p);
         });
         return capturedPiece.orElse(null);
+    }
+
+    private void undoMove(Position source, Position target, Piece capturedPiece) {
+        Optional<Piece> p = Optional.ofNullable(board.removePiece(target));
+        board.placePiece(p.get(), source);
+        p.ifPresent(piece -> {
+            board.placePiece(capturedPiece, target);
+            capturedPieces.remove(piece);
+            piecesOnTheBoard.add(piece);
+        });
     }
 
     private void validateSourcePosition(Position position) {
