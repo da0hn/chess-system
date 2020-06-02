@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class UI {
@@ -35,11 +34,12 @@ public class UI {
     public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
     public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 
-    public static void printMatch(ChessMatch match) {
+    public static void printMatch(ChessMatch match, List<ChessPiece> captured) {
         printBoard(match.getPieces());
         System.out.println();
+        printCapturedPieces(captured);
         System.out.printf("Turn: %d%n", match.getTurn());
-        System.out.printf("Waiting player: %s%n", match.getCurrentPlayer());
+        System.out.printf("Waiting player: %s", match.getCurrentPlayer());
     }
 
     public static void printBoard(ChessPiece[][] pieces) {

@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chess/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessMatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +42,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -99,6 +104,7 @@
       <workItem from="1590587341417" duration="20210000" />
       <workItem from="1590676004277" duration="2948000" />
       <workItem from="1591098981411" duration="1521000" />
+      <workItem from="1591119523893" duration="3328000" />
     </task>
     <task id="LOCAL-00001" summary="ChessException and ChessPosition">
       <created>1590592141675</created>
@@ -130,21 +136,25 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="738" y="301" width="424" height="506" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1590590853133" />
-    <state width="1878" height="339" key="GridCell.Tab.0.bottom" timestamp="1590679669240">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state width="1537" height="393" key="GridCell.Tab.0.bottom" timestamp="1591120289142">
+      <screen x="0" y="30" width="1536" height="834" />
     </state>
+    <state width="1537" height="393" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1591120289142" />
     <state width="1878" height="339" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1590679669240" />
-    <state width="1878" height="339" key="GridCell.Tab.0.center" timestamp="1590679669239">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state width="1537" height="393" key="GridCell.Tab.0.center" timestamp="1591120289141">
+      <screen x="0" y="30" width="1536" height="834" />
     </state>
+    <state width="1537" height="393" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1591120289141" />
     <state width="1878" height="339" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1590679669239" />
-    <state width="1878" height="339" key="GridCell.Tab.0.left" timestamp="1590679669239">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state width="1537" height="393" key="GridCell.Tab.0.left" timestamp="1591120289141">
+      <screen x="0" y="30" width="1536" height="834" />
     </state>
+    <state width="1537" height="393" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1591120289141" />
     <state width="1878" height="339" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1590679669239" />
-    <state width="1878" height="339" key="GridCell.Tab.0.right" timestamp="1590679669239">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state width="1537" height="393" key="GridCell.Tab.0.right" timestamp="1591120289141">
+      <screen x="0" y="30" width="1536" height="834" />
     </state>
+    <state width="1537" height="393" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1591120289141" />
     <state width="1878" height="339" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1590679669239" />
     <state width="1878" height="339" key="GridCell.Tab.1.bottom" timestamp="1590679669241">
       <screen x="0" y="40" width="1920" height="1040" />
@@ -166,9 +176,14 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="459" y="192" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1590678575424" />
-    <state x="618" y="267" width="672" height="678" key="search.everywhere.popup" timestamp="1591101381442">
-      <screen x="0" y="40" width="1920" height="1040" />
+    <state x="425" y="204" key="run.anything.popup" timestamp="1591121852928">
+      <screen x="0" y="30" width="1536" height="834" />
     </state>
+    <state x="425" y="204" key="run.anything.popup/0.30.1536.834@0.30.1536.834" timestamp="1591121852928" />
+    <state x="494" y="212" width="672" height="544" key="search.everywhere.popup" timestamp="1591121855242">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="494" y="212" width="672" height="544" key="search.everywhere.popup/0.30.1536.834@0.30.1536.834" timestamp="1591121855242" />
     <state x="618" y="267" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1591101381442" />
   </component>
 </project>
