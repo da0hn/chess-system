@@ -5,8 +5,12 @@ import chess.ChessPiece;
 import chess.ChessPosition;
 import chess.Color;
 
+import java.util.Arrays;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class UI {
 
@@ -94,5 +98,25 @@ public class UI {
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
+    }
+
+    private static void printCapturedPieces(List<ChessPiece> captured) {
+        List<ChessPiece> white = filterCapturedByColor(captured, Color.WHITE);
+        List<ChessPiece> black = filterCapturedByColor(captured, Color.BLACK);
+        System.out.println("Captured pieces:");
+        System.out.print("White:");
+        System.out.print(ANSI_WHITE);
+        System.out.println(Arrays.toString(white.toArray()));
+        System.out.print(ANSI_RESET);
+        System.out.print("Black:");
+        System.out.print(ANSI_YELLOW);
+        System.out.println(Arrays.toString(black.toArray()));
+        System.out.print(ANSI_RESET);
+    }
+
+    private static List<ChessPiece> filterCapturedByColor(List<ChessPiece> captured, Color color) {
+        return captured.stream()
+                .filter(piece -> piece.getColor().equals(color))
+                .collect(Collectors.toList());
     }
 }
