@@ -35,7 +35,7 @@ public class Program {
                 Optional<ChessPiece> capturedPiece = Optional.ofNullable(match.performChessMove(source, target));
                 capturedPiece.ifPresent(captured::add);
             }
-            catch(ChessException | InputMismatchException e ) {
+            catch(ChessException | InputMismatchException e) {
                 System.out.println(e.getMessage());
                 sc.nextLine();
             }

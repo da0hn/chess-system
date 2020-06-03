@@ -11,7 +11,7 @@ public class ChessPosition {
     private final int row;
 
     public ChessPosition(char column, int row) {
-        if( column < 'a' || column > 'h' || row < 0 || row > 8) {
+        if(column < 'a' || column > 'h' || row < 0 || row > 8) {
             throw new ChessException("Error instantiating ChessPosition. Valid position are from a1 to h8");
         }
         this.column = column;
@@ -19,16 +19,16 @@ public class ChessPosition {
     }
 
     /*
-    * matrix_row = 8 - chess_row
-    * 'a' - 'a' = 0
-    * 'b' - 'a' = 1
-    * */
+     * matrix_row = 8 - chess_row
+     * 'a' - 'a' = 0
+     * 'b' - 'a' = 1
+     * */
     protected Position toPosition() {
         return new Position((8 - this.row), (this.column - 'a'));
     }
 
     protected static ChessPosition fromPosition(Position position) {
-        return new ChessPosition((char)('a' - position.getColumn()), 8 - position.getRow());
+        return new ChessPosition((char) ('a' + position.getColumn()), 8 - position.getRow());
     }
 
     public char getColumn() {
