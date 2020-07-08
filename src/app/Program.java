@@ -12,12 +12,11 @@ import java.util.Optional;
 import java.util.Scanner;
 
 public class Program {
-
     public static void main(String[] args) {
         var sc = new Scanner(System.in);
         ChessMatch match = new ChessMatch();
         List<ChessPiece> captured = new ArrayList<>();
-        while(true) {
+        while(!match.getCheckMate()) {
             try {
                 UI.clearScreen();
                 UI.printMatch(match, captured);
@@ -40,6 +39,8 @@ public class Program {
                 sc.nextLine();
             }
         }
+        // terminou a partida
+        UI.clearScreen();
+        UI.printMatch(match, captured);
     }
-
 }
